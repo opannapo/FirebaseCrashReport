@@ -2,10 +2,10 @@
 Panduan implementasi Firebase CrashReport pada project Android
 
 
-## Step 1
->Buat Android Application Project
+## Step 1, (Android Project)
+- Buat Android Application Project
 
-## Step 2
+## Step 2, (Firebase Project)
 - Buat Project di Firebase Console https://console.firebase.google.com/.
 <p align="center"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/step2_1.jpg" width="350"/></p>
 
@@ -14,3 +14,34 @@ Panduan implementasi Firebase CrashReport pada project Android
 
 - Setelah google-services.json di download, tempatkan file tersebut di directory Android Project.
 <p align="center"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step2_3.png" width="350"/></p> 
+
+## Step 3, Gradle
+### Pada kasus ini saya masih menggunakan gradle 2.3
+
+- Konfigurasi Gradle pada root project
+
+```gradle
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.google.firebase:firebase-plugins:1.1.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+```

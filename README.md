@@ -103,3 +103,33 @@ apply plugin: 'com.google.firebase.firebase-crash'
 - Dapat juga menggunakan filter berdasarkan Versi Applikasi untuk menampilkan list Crash Reporting
 
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step5_1.png" width="500"/></p>
+
+## Step 6, ProGuard
+Apabila aplikasi menggunakan konfigurasi ProGuard, maka perlu dilakukan beberapa konfigurasi tambahan di dalam Firebase Project. Hal ini bertujuan agar Report yang didapatkan Sesuai dengan Code Applikasi yang sebenarnya. Sebagaimana diketahui salah satu fungsi dari ProGuard adalah sebagai tool proteksi yang digunakan untuk obfuscate code.
+<br>
+Untuk lebih jelasnya, gambar dibawah ini akan menunjukan bagaimana report yang didapat ketika applikasi menggunakan ProGuard
+
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_1.png" width="500"/></p>
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_2.png" width="500"/></p>
+
+Firebase Crash Report akan mengelompokan/grouping laporan error berdasarkan jenis kesalahan yang sama.<br>
+Pada gambar diatas terdapat 4 Group crash report.<br>
+Padahal sebenarnya 4 group diatas mencangkup 2 jenis kesalahan yang sama. Hanya saja ketika project menggunakan ProGuard, code dari aplikasi akan diproteksi (obfuscate code). Sehingga Firebase akan menganggap kesalahan ini dari sumber kode yang berbeda, dan dikelompokan menjadi satu jenis kesalahan baru.
+<br>
+<br>
+Untuk Membuat Code anda dikenali oleh Firebase setelah disamarkan dengan penggunakan ProGuard, anda perlu melakukan beberapa langkah dibawah ini.
+
+- Upload File Pemetaan
+File pemetaan yang dihasilkan oleh ProGuard terdapat pada directory app/build/outputs/mapping/release/mapping.txt.
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_4.png" width="500"/></p>
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_5.png" width="500"/></p>
+
+
+
+## Step 7, Perbandingan
+Perbandingan sebelum konfigurasi pemetaan dilakukan dan sesudahnya.
+
+
+
+
+

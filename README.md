@@ -142,6 +142,7 @@ Kesalahan/Error terjadi pada code didalam method <b>"p()"</b>, dengan keterangan
 <br>
 <br>
 <br>
+
 ### Gambar2
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step7_2.png" width="500"/></p>
 - Gambar2, Setelah file pemetaan ProGuard diupload ke Firebase Project.<br>

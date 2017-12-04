@@ -60,3 +60,36 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.firebase-crash'
 ...
 ```
+
+## Step 4, Java
+- Firebase Log
+```java
+...
+     @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+         
+        FirebaseCrash.log("Activity created"); //LOG
+    }
+    
+...
+
+```
+
+- Report Exception
+```java
+...
+    try {
+        JSONObject obj = new JSONObject("{\"id\": 1,\"name\": \"opannapo\"}");
+        int id = obj.getInt("id");
+        String name = obj.getString("username"); //JSONException: No value for username
+
+        Toast.makeText(this, "Data:" + String.valueOf(id) + "|" + name, Toast.LENGTH_SHORT).show();
+    } catch (JSONException e) {
+        e.printStackTrace();
+        FirebaseCrash.log("JSON PARSING ERROR");
+        FirebaseCrash.report(e);
+    }
+...
+```

@@ -95,3 +95,11 @@ apply plugin: 'com.google.firebase.firebase-crash'
 ```
 
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step4_1.png" width="500"/></p>
+
+## Step 5, Monitoring Crash Report pada Firebase Console
+- Login ke Akun Firebase
+- Pilih Project
+- Masuk pada menu STABILITY -> Crash Reporting (Kiri Menu)
+- Dapat juga menggunakan filter berdasarkan Versi Applikasi untuk menampilkan list Crash Reporting
+
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step5_1.png" width="500"/></p>

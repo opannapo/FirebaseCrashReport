@@ -93,4 +93,5 @@ apply plugin: 'com.google.firebase.firebase-crash'
     }
 ...
 ```
-<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/step4_1.png" width="350"/></p>
+
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step4_1.png" width="350"/></p>

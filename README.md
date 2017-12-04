@@ -122,6 +122,7 @@ Untuk Membuat Code anda dikenali oleh Firebase setelah disamarkan dengan penggun
 - Upload File Pemetaan
 
 File pemetaan yang dihasilkan oleh ProGuard terdapat pada directory app/build/outputs/mapping/release/mapping.txt.
+<p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_3.png" width="500"/></p>
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_4.png" width="500"/></p>
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step6_5.png" width="500"/></p>
 

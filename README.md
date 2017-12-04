@@ -138,15 +138,16 @@ Error terjadi ketika method <b>"actionNullCase"</b> di eksekusi melalui OnClick<
 
 Gambar1, Sebelum dilakukan konfigurasi pemetaan ProGuard di dalam Firebase Project.
 - Pada gambar pertama dilaporkan Exception yang berhasil ditangkap adalah class <b>"a"</b> didalam package <b>"exmp.napodev.firebasecrashexample.b"</b> . 
-- Keterangan detail <b>"Exception exmp.napodev.firebasecrashexample.b.a: Class"</b>.
+- Detail Exception <b>"Exception exmp.napodev.firebasecrashexample.b.a: Class"</b>.
 - Kesalahan/Error terjadi pada code didalam method <b>"p()"</b>, dengan keterangan <b>exmp.napodev.firebasecrashexample.MainActivity.p ()</b>.
  
 ### Gambar2
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step7_2.png" width="500"/></p>
-- Gambar2, Setelah file pemetaan ProGuard diupload ke Firebase Project.<br>
-Pada gambar kedua dilaporkan Exception yang berhasil ditangkap adalah class <b>"EntityNullException"</b> didalam package <b>"exmp.napodev.firebasecrashexample.exceptions"</b> .<br>
-Dengan keterangan detail <b>"Exception exmp.napodev.firebasecrashexample.exceptions.EntityNullException: Class"</b>.<br>
-Kesalahan/Error terjadi pada code didalam method <b>"actionNullCase()"</b>, dengan keterangan <b>exmp.napodev.firebasecrashexample.MainActivity.actionNullCase (MainActivity.java)</b>.
+
+Gambar2, Setelah file pemetaan ProGuard diupload ke Firebase Project.<br>
+- Pada gambar kedua dilaporkan Exception yang berhasil ditangkap adalah class <b>"EntityNullException"</b> didalam package <b>"exmp.napodev.firebasecrashexample.exceptions"</b> .
+- Detail Exception <b>"Exception exmp.napodev.firebasecrashexample.exceptions.EntityNullException: Class"</b>.
+- Kesalahan/Error terjadi pada code didalam method <b>"actionNullCase()"</b>, dengan keterangan <b>exmp.napodev.firebasecrashexample.MainActivity.actionNullCase (MainActivity.java)</b>.
 
 
 

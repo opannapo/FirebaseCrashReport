@@ -135,14 +135,11 @@ Error terjadi ketika method <b>"actionNullCase"</b> di eksekusi melalui OnClick<
 
 ### Gambar1
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step7_1.png" width="500"/></p> 
-- Gambar1, Sebelum dilakukan konfigurasi pemetaan ProGuard di dalam Firebase Project.<br>
-Pada gambar pertama dilaporkan Exception yang berhasil ditangkap adalah class <b>"a"</b> didalam package <b>"exmp.napodev.firebasecrashexample.b"</b> .<br>
-Dengan keterangan detail <b>"Exception exmp.napodev.firebasecrashexample.b.a: Class"</b>.<br>
-Kesalahan/Error terjadi pada code didalam method <b>"p()"</b>, dengan keterangan <b>exmp.napodev.firebasecrashexample.MainActivity.p ()</b>.
-<br>
-<br>
-<br>
-
+Gambar1, Sebelum dilakukan konfigurasi pemetaan ProGuard di dalam Firebase Project.
+- Pada gambar pertama dilaporkan Exception yang berhasil ditangkap adalah class <b>"a"</b> didalam package <b>"exmp.napodev.firebasecrashexample.b"</b> .<br>
+Dengan keterangan detail <b>"Exception exmp.napodev.firebasecrashexample.b.a: Class"</b>.
+- Kesalahan/Error terjadi pada code didalam method <b>"p()"</b>, dengan keterangan <b>exmp.napodev.firebasecrashexample.MainActivity.p ()</b>.
+ 
 ### Gambar2
 <p align="left"><img src="https://github.com/opannapo/FirebaseCrashReport/blob/master/images/Step7_2.png" width="500"/></p>
 - Gambar2, Setelah file pemetaan ProGuard diupload ke Firebase Project.<br>
